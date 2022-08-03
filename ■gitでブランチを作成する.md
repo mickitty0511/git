@@ -14,16 +14,16 @@
 
 ・リモートリポジトリをカレントディレクトリでローカルリポジトリに落とし込む。  
 
-**git branch <branch-name>**
+**git branch \<branch-name\>**
 
 ・branch-name ＝ ブランチ名。作業内容が分かりやすく短い名前にする  
 ・ブランチ名命名規則：単語をつなげるときは「-」で  
 
-**git checkout <branch-name>**
+**git checkout \<branch-name\>**
 
 ・作成したブランチに切り替える  
 
-**git branch -b <branch-name>**
+**git branch -b \<branch-name\>**
 
 ・ブランチを作成すると同時に作成したブランチに切り替える  
 
@@ -81,17 +81,17 @@ ___
 
 ### ⑤リモートリポジトリにローカルリポジトリの内容をpushする
 
-複数人による開発でcloneした時と比べて、リモートリポジトリの内容が更新されている場合がある。 
-→最新のリモートリポジトリをローカルリポジトリに反映してから、リモートリポジトリにpushする必要がある。  
+複数人による開発でcloneした時と比べて、リモートリポジトリの内容が更新されている場合がある。  
+→最新のリモートリポジトリをローカルリポジトリに反映してから、リモートリポジトリにpushする必要がある。    
 
-**git pull <remote_ref> <branch-name>**
+**git pull \<remote_ref\> \<branch-name\>**
 
-・リモートリポジトリ(<remote_ref>)にある指定したブランチ(<branch-name>)の状態を  
+・リモートリポジトリ(\<remote_ref\>)にある指定したブランチ(\<branch-name\>)の状態を  
   ローカルリポジトリに反映する。  
 
-**git push <remote_ref> <branch-name>**
+**git push \<remote_ref\> \<branch-name\>**
 
-・リモートリポジトリ(<remote_ref>)に、指定したブランチ(<branch-name>)の変更内容をpushする。  
+・リモートリポジトリ(\<remote_ref\>)に、指定したブランチ(\<branch-name\>)の変更内容をpushする。  
   指定したブランチがpullしたときのリモートリポジトリにないものであれば、  
   ブランチが新規作成される。（ローカルリポジトリの状態がリモートリポジトリに反映される。）  
 
@@ -113,18 +113,18 @@ ___
 
 ### ⑦ブランチのマージ後のリモートリポジトリをローカルリポジトリに反映する。
 
-**git checkout <merged-branch-name>**
-・マージ後に残ったブランチ<merged-branch-name>の状態をローカルリポジトリに反映するために  
+**git checkout \<merged-branch-name\>**
+・マージ後に残ったブランチ\<merged-branch-name\>の状態をローカルリポジトリに反映するために  
 マージ後に残ったブランチに切り替える。  
 
-**git pull <remote_ref> <merged-branch-name>**  
-・マージ後に残ったブランチ<merged-branch-name>の状態をローカルリポジトリに反映する。  
+**git pull \<remote_ref\> \<merged-branch-name\>**  
+・マージ後に残ったブランチ\<merged-branch-name\>の状態をローカルリポジトリに反映する。  
 
 ___
 
 ### ⑧不要になったブランチをローカル・リモートリポジトリで削除する
 ●ローカルリポジトリで不要になったブランチを削除する場合  
-**git branch -d <branch-name>**  
+**git branch -d \<branch-name\>**  
 ※マージしていないブランチは削除できない。  
 ※強制的に削除する場合は-d→-Dにする  
 
