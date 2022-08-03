@@ -114,10 +114,12 @@ ___
 ### ⑦ブランチのマージ後のリモートリポジトリをローカルリポジトリに反映する。
 
 **git checkout \<merged-branch-name\>**
+
 ・マージ後に残ったブランチ\<merged-branch-name\>の状態をローカルリポジトリに反映するために  
 マージ後に残ったブランチに切り替える。  
 
 **git pull \<remote_ref\> \<merged-branch-name\>**  
+
 ・マージ後に残ったブランチ\<merged-branch-name\>の状態をローカルリポジトリに反映する。  
 
 ___
