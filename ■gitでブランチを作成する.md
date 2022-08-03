@@ -44,11 +44,11 @@ git branch や git diff時にpager(一覧で表示する)で表示されるの�
 ___
 
 ### ②ファイルをStaging Areaに入れる。
-**git add <filename>**
+**git add \<filename\>**
 
 ・指定したファイルをStaging Areaに追加する。  
 
-**git add <foldername>**
+**git add \<foldername\>**
 
 ・指定したフォルダをStagin Areaに追加する。
 
